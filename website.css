@@ -1,0 +1,177 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    font-family: "Times New Roman", serif;
+    line-height: 1.8;
+    background: #fff;
+    color: #222;
+    padding: 0 1rem;
+  }
+
+  a {
+    color: #522081;
+    text-decoration: none;
+  }
+
+  a:hover,
+  a:focus {
+    text-decoration: underline;
+  }
+
+
+  header {
+    text-align: center;
+    padding: 1rem 0;
+    border-bottom: 2px solid #eee;
+    background-color: #d6cadd; 
+  }
+
+  .logo {
+    font-size: 2rem;
+    color: #522081;
+  }
+
+  .role {
+    font-size: 1rem;
+    color: #666;
+  }
+
+  .nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+
+  .nav-links a {
+    font-weight: bold;
+  }
+
+  /* Headings */
+  h1, h2, h3 {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+    color: #522081;
+    border-left: 4px solid #522081;
+    padding-left: 0.5rem;
+    margin-top: 2rem;
+  }
+
+  h3 {
+    font-size: 1.2rem;
+    color: #522081;
+  }
+
+  /* Sections */
+  section {
+    margin: 3rem auto;
+    max-width: 800px;
+  }
+
+  p {
+    margin-bottom: 1rem;
+  }
+
+  figure {
+    text-align: center;
+    margin: 2rem auto;
+  }
+
+ figure img {
+  width: 300px;        
+  height: 300px;       
+  object-fit: cover;   
+  border: 3px solid #ccc;
+}
+
+  figcaption {
+    font-style: italic;
+    color: #666;
+    margin-top: 0.5rem;
+  }
+
+  /* Cards */
+  .card-container {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  }
+
+  .card {
+    background: #f9f9f9;
+    border-left: 4px solid #522081;
+    border: 1px solid #ddd;
+    padding: 1rem;
+  }
+
+  .deck {
+    color: #444;
+    margin: 0.5rem 0;
+  }
+
+  .meta,
+  .tags {
+    font-size: 0.9rem;
+    color: #666;
+  }
+
+  .button {
+    display: inline-block;
+    margin-top: 0.5rem;
+    padding: 0.4rem 0.8rem;
+    background: #522081;
+    color: white;
+    border-radius: 4px;
+  }
+
+  .button:hover {
+    background: #3e1761;
+  }
+
+  /* Skills List */
+  .skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 1rem;
+  }
+
+  .skills-list li {
+    background: #eee;
+    padding: 0.4rem 0.8rem;
+    border-radius: 20px;
+    list-style: none;
+  }
+
+  /* Footer */
+  footer {
+    text-align: center;
+    font-size: 0.9rem;
+    color: #666;
+    border-top: 1px solid #ddd;
+    margin-top: 3rem;
+    padding-top: 1rem;
+    background-color: #d6cadd; 
+  }
+
+  /* Responsive */
+  @media (max-width: 600px) {
+    .nav-links {
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+
+    .skills-list {
+      flex-direction: column;
+    }
+  }
